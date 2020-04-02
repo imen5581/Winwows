@@ -762,6 +762,47 @@ margin-left: 15px;
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 364px) {
+
+#text_slide1, #text_slide2, #text_slide3{
+   
+    font-size: 14px;
+    
+    
+
+}
+#knopka{
+	
+	margin-left: 80px;
+	
+}
+
+.bespl{
+font-size:12px;
+margin-left: 4px;
+
+}
+
+}
+
+@media (max-width: 352px) {
+
+#text_slide1, #text_slide2, #text_slide3{
+   
+    font-size: 14px;
+    
+    
+
+}
+
+#knopka{
+	
+	margin-left: 80px;
+	
+}
+}
+
 @media (max-width: 352px) {
 
 #text_slide1, #text_slide2, #text_slide3{
