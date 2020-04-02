@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="main">
+    <div class="container">
+        <div class="header">
+            <div class="row">
+
+                <div class="col-md-9 col-sm-4 col-xs-12">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Гипсолит. Штукатурка стен"> 
+		
+                    </div>
+				
+                
+				<div class = "text"><p>Производство и монтаж пластиковых окон <br/> REHAU в Нижнем Новгороде</p></div> 
+               
+				 
+                </div>
+
+						
+
+            
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="wrap">
+                        <div class="wrap-block">
+                            <div class="phone-block">
+                <a class = "phone-link" href = "#"> +7 495 771 05 08 </a>
+					<p> Работаем с 9:00 до 18:00</p>
+                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        <div class="main-content">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="main-title">
+					<p class = "minute">Узнайте за 1 минуту</p>							
+                        <h1>Точную <strong id = "cost">стоимость</strong> пластиковых окон</h1>
+                        <p class = "main-subtitle">По вашим параметрам <strong>прямо сейчас</strong></p>
+                        <span class = "slider">
+							<p class = "otvet">Ответив на простые вопросы, Вы получите:</p>
+							<div id="text_slide1">СТОИМОСТЬ ПЛАСТИКОВЫХ ОКОН</div>
+							<div id="text_slide2">СКИДКУ 15% НА ПЛАСТИКОВЫЕ ОКНА</div>
+							<div id="text_slide3">БОНУСЫ И ПОЛЕЗНЫЙ ПОДАРОК</div>
+							
+
+							
+                            
+							
+                        </span>
+						
+						<button id = "knopka" class = "knopka"><strong>УЗНАТЬ СТОИМОСТЬ СЕЙЧАС</strong><br/> и получить бонусы <strong>+</strong> подарок</button>
+
+						<p class = "bespl">Тест бесплатный и ни к чему Вас не обязывает</p>
+						
+								<script>
+          
+    $('.knopka').addClass('autoflash').append('<div class="flash lighting" style="height: 60px;width: 40px;top: 0px;left: -140px;"></div>');
+</script>
+
+<style>
+
+     .autoflash{
+        position: relative;
+        overflow: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+     .flash{
+       content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    transition: none;
+    }
+    
+    .lighting {
+    webkit-animation: moving 3s ease-in-out infinite;
+    -moz-animation: moving 3s ease-in-out infinite;
+    -ms-animation: moving 3s ease-in-out infinite;
+    -o-animation: moving 3s ease-in-out infinite;
+    animation: moving 3s ease-in-out infinite;
+   
+    }
+    
+  @keyframes moving {  
+     30% {  webkit-transform: skewX(-45deg) translateX(33.5em);
+        transform: skewX(-45deg) translateX(33.5em);   
+        
+        }
+   
+    100% {  webkit-transform: skewX(-45deg) translateX(33.5em);
+        transform: skewX(-45deg) translateX(33.5em);   
+        
+        }
+     }
+      
+</style>
+						
+						<script type="text/javascript">  
+								var text_slide_cur=0;
+								function showtext_slide(){
+									$('#text_slide'+(text_slide_cur+1)).css({opacity: 0}).animate({opacity: 1.0,left: "150px"}, 1000);
+									setTimeout(hidetext_slide, 3000);
+								}
+								function hidetext_slide(){
+									$('#text_slide'+(text_slide_cur+1)).css({opacity: 1}).animate({opacity: 0,left: "-50px"}, 1000,function(){showtext_slide();});
+									text_slide_cur=(text_slide_cur+1)%3;
+								}
+								$(document).ready(function() {
+									showtext_slide();
+								})
+						</script> 
+						
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-ld-offset-2 col-md-5 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                    <div class="main-form">
+                        <img src="img/psd_3.png" alt="">
+                        <!-- <img id = "rehau" src="img/2000px-rehau_logosvg.png" alt=""> -->
+		
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
